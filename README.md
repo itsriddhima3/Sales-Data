@@ -163,7 +163,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 👤 Author
 
-Your Name - [Your GitHub Profile](https://github.com/yourusername)
+Your Name - [Riddhima Singh](https://github.com/itsriddhima3)
 
 ## 🙏 Acknowledgments
 
@@ -173,4 +173,3 @@ Your Name - [Your GitHub Profile](https://github.com/yourusername)
 
 ---
 
-**Note**: This project is for educational and demonstration purposes. The sales data used is fictitious and for illustrative purposes only.

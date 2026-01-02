@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { Filter, TrendingUp, DollarSign, ShoppingCart } from 'lucide-react';
-import Card from '../components/atoms/Card';
+import Card from '@/components/atoms/Card';
 import Button from '@/components/atoms/Button';
 import Input from '@/components/atoms/Input';
 import StatCard from '@/components/molecules/StatCard';
@@ -60,8 +60,8 @@ export default function Dashboard() {
 
         {/* Filter Section */}
         <Card>
-          <div className="flex items-end gap-4">
-            <div className="flex-1">
+          <div className="flex flex-col sm:flex-row sm:items-end gap-4">
+            <div className="flex-1 w-full">
               <Input
                 label="Filter by Sales Threshold"
                 type="number"
@@ -70,7 +70,7 @@ export default function Dashboard() {
                 placeholder="Enter minimum sales amount (e.g., 70000)"
               />
             </div>
-            <Button onClick={() => setThreshold('')} className="mb-0">
+            <Button onClick={() => setThreshold('')} className="w-full sm:w-auto whitespace-nowrap">
               <Filter className="w-4 h-4 inline mr-2" />
               Clear Filter
             </Button>

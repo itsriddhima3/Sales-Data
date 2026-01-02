@@ -43,6 +43,7 @@ sales-dashboard/
 ├── package.json
 ├── tsconfig.json
 ├── postcss.config.js
+└── README.md
 ```
 
 ## 🚀 Getting Started
@@ -172,4 +173,3 @@ Your Name - [Riddhima Singh](https://github.com/itsriddhima3)
 - Built as part of a front-end development assessment
 
 ---
-

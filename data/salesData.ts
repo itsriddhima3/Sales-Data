@@ -1,4 +1,3 @@
-// Types for our sales data
 export interface SalesDataItem {
   month: string;
   '2022': number;
@@ -10,10 +9,9 @@ export interface YearlyTotal {
   year: string;
   total: number;
   color: string;
+  [key: string]: string | number;
 }
 
-// Mock sales data inspired by typical e-commerce patterns
-// Data shows seasonal trends with peaks during holiday seasons
 export const salesData: SalesDataItem[] = [
   { month: 'Jan', '2022': 45000, '2023': 52000, '2024': 61000 },
   { month: 'Feb', '2022': 52000, '2023': 58000, '2024': 68000 },
@@ -29,7 +27,7 @@ export const salesData: SalesDataItem[] = [
   { month: 'Dec', '2022': 85000, '2023': 95000, '2024': 105000 },
 ];
 
-// Yearly totals for pie chart visualization
+
 export const yearlyTotals: YearlyTotal[] = [
   { year: '2022', total: 752000, color: '#8b5cf6' },
   { year: '2023', total: 867000, color: '#06b6d4' },

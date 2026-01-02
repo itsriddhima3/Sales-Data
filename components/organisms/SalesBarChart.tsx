@@ -27,25 +27,29 @@ const SalesBarChart: React.FC<SalesBarChartProps> = ({ data, threshold }) => {
     : data;
 
   return (
-    <ResponsiveContainer width="100%" height={350}>
-      <BarChart data={filteredData}>
-        <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
-        <XAxis dataKey="month" stroke="#6b7280" />
-        <YAxis stroke="#6b7280" />
-        <Tooltip
-          contentStyle={{
-            backgroundColor: '#fff',
-            border: '1px solid #e5e7eb',
-            borderRadius: '8px',
-          }}
-          formatter={(value: number | undefined) => value ? `$${value.toLocaleString()}` : '-'}
-        />
-        <Legend />
-        <Bar dataKey="2022" fill="#8b5cf6" radius={[8, 8, 0, 0]} />
-        <Bar dataKey="2023" fill="#06b6d4" radius={[8, 8, 0, 0]} />
-        <Bar dataKey="2024" fill="#10b981" radius={[8, 8, 0, 0]} />
-      </BarChart>
-    </ResponsiveContainer>
+    <div className="w-full overflow-x-auto">
+      <div className="min-w-[600px]">
+        <ResponsiveContainer width="100%" height={350}>
+          <BarChart data={filteredData} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
+            <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
+            <XAxis dataKey="month" stroke="#6b7280" />
+            <YAxis stroke="#6b7280" />
+            <Tooltip
+              contentStyle={{
+                backgroundColor: '#fff',
+                border: '1px solid #e5e7eb',
+                borderRadius: '8px',
+              }}
+              formatter={(value: number | undefined) => value ? `$${value.toLocaleString()}` : '-'}
+            />
+            <Legend />
+            <Bar dataKey="2022" fill="#8b5cf6" radius={[8, 8, 0, 0]} />
+            <Bar dataKey="2023" fill="#06b6d4" radius={[8, 8, 0, 0]} />
+            <Bar dataKey="2024" fill="#10b981" radius={[8, 8, 0, 0]} />
+          </BarChart>
+        </ResponsiveContainer>
+      </div>
+    </div>
   );
 };
 

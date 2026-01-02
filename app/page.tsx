@@ -72,7 +72,7 @@ export default function Dashboard() {
             </div>
             <Button onClick={() => setThreshold('')} className="w-full sm:w-auto whitespace-nowrap">
               <Filter className="w-4 h-4 inline mr-2" />
-              Clear Filt
+              Clear Filter
             </Button>
           </div>
           {threshold && (
